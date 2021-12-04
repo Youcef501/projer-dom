@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+      <!-- font-awesome links -->
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dom.css">
+</head>
+<body>
+ <div class="container">
+    <div class="title">
+        <p class="total">Shopping Bag Total : <span id="total">0</span> <span>$</span></p>
+      </div>
+    <div class="box1" id="part1">
+ <div class="icon" > 
+    <i  class="fa fa-heart" id="heart" onclick="heart1()"> </i>
+    <i class="fa fa-trash" onclick="remove()" ></i>
+
+ </div>
+ <div class="image">
+<img src="./im1.jpg" alt="">
+ </div>
+ <div class="texte">
+    HD LED Display  
+ </div>
+ <div class="dec button" onclick="dec()">-</div>
+ <span class="btn" id="product-qtn">0</span>
+ <div class="inc button" onclick="inc()">+</div>
+
+ <p class="product-price"><span id="product1price">0</span> <span>$</span></p> 
+    </div>
+
+    <div class="box1" id="part2" >
+        <div class="icon" > 
+           <i id="click" class="fa fa-heart" onclick="heart2()"   ></i>
+           <i class="fa fa-trash" id="heart" onclick="remove2()"  > </i>
+       
+        </div>
+        <div class="image">
+       <img src="./im2.jpg" alt="">
+        </div>
+        <div class="texte">
+            Tornado TORNADO <br>
+            LED TV 32 
+        </div>
+        <div class="dec button" onclick="dec1()" >-</div>
+        <span class="btn" id="product-qtn2">0</span>
+        <div class="inc button"  onclick="inc1()">+</div>
+        
+        <p class="product-price"><span id="product1price2">0</span> <span>$</span></p> 
+           </div>
+          
+
+           <div class="box1"id="part3">
+            <div class="icon" > 
+               <i id="click2"  class="fa fa-heart"onclick="heart3()" ></i>
+               <i id="heart1" class="fa fa-trash" onclick="remove3()"></i>
+           
+            </div>
+            <div class="image">
+           <img src="./im3.jpg" alt="">
+            </div>
+            <div class="texte">
+                Jac 39-inch Full <br> 
+                HD LED Smart TV
+            </div>
+            <div class="dec button" onclick="inc3()">-</div>
+            <span class="btn" id="product-qtn3">0</span>
+            <div class="inc button"onclick="dec3()" >+</div>
+            
+            <p class="product-price"><span id="product1price3">0</span> <span>$</span></p> 
+               </div>
+           
+
+ </div>   
+</body>
+<script src="./dom.js"></script>
+</html>
